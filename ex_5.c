@@ -4,15 +4,16 @@
 
 #define GB_TO_BYTE 1024 * 1024
 
-unsigned int valorGB, resultadoBytes;
+unsigned int valorGB;
+unsigned long resultadoBytes;
 
 int main(void) {
   printf("Digite o valor em GB ");
   scanf("%d", &valorGB);
 
-  resultadoBytes = valorGB * GB_TO_BYTE;
+  resultadoBytes = (long)valorGB * GB_TO_BYTE;
   
-  printf("O valor em bytes é %d\n", resultadoBytes);
+  printf("Esse valor equivale a %ld bytes\n", resultadoBytes);
   
   return 0;
 }

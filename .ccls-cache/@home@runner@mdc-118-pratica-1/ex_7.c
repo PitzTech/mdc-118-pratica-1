@@ -5,18 +5,22 @@
 
 float altura, distancia, angulo;
 
+float degreeToRadian(float degree) {
+  return degree * M_PI / 180;
+}
+
 int main(void) {
-  printf("Digite a distancia percorrida pelo aviao ");
+  printf("Digite a distancia percorrida pelo aviao em km ");
   scanf("%f", &distancia);
 
-  printf("Digite a angulação média do aviao (<= 45) ");
+  printf("Digite a angulação média do aviao em graus (<= 45) ");
   scanf("%f", &angulo);
 
-  altura = sinf(angulo * 3.1446 / 180) * distancia;
+  altura = sinf(degreeToRadian(angulo)) * distancia;
   
-  printf("A altura atual do aviao e de %.2f", altura);
+  printf("A altura atual do aviao e de %.2fkm\n", altura);
   
   return 0;
 }
 
-// clang ex_6.c -o resul -lm
+//gcc ex_7.c -o resu -lm -Wno-unused-result && ./resu
