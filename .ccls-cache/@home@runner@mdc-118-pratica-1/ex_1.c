@@ -8,12 +8,14 @@ int main(void) {
   printf("Digite a nota de sua A1 ");
   scanf("%f", &notaA1);
 
-  printf("\nDigite a nota de sua A2 ");
+  printf("Digite a nota de sua A2 ");
   scanf("%f", &notaA2);
 
-  media = (notaA1 + notaA2) /2;
+  media = notaA1 * 0.4 + notaA2 * 0.6;
 
-  printf("\nA média final é %.2f", media);
+  printf("A média final é %.2f\n", media);
   
   return 0;
 }
+
+//gcc ex_1.c -o resu -Wno-unused-result && ./resu

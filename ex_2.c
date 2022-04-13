@@ -9,12 +9,14 @@ int main(void) {
   printf("Digite o valor da base ");
   scanf("%d", &base);
 
-    printf("Digite o valor da altura ");
+  printf("Digite o valor da altura ");
   scanf("%d", &altura);
 
-  areaTringulo = altura * base / 2;
+  areaTringulo = (float)(altura * base) / 2;
   
-  printf("\nO valor da área do triangulo é %.2f", areaTringulo);
+  printf("A área do triangulo é %.2f\n", areaTringulo);
   
   return 0;
 }
+
+//gcc ex_2.c -o resu -Wno-unused-result && ./resu

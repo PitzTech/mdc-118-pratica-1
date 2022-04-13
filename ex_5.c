@@ -12,7 +12,8 @@ int main(void) {
 
   resultadoBytes = valorGB * GB_TO_BYTE;
   
-  printf("\nO valor em bytes é %d", resultadoBytes);
+  printf("O valor em bytes é %d\n", resultadoBytes);
   
   return 0;
 }
+//gcc ex_5.c -o resu -Wno-unused-result && ./resu

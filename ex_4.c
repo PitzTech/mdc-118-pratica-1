@@ -14,7 +14,9 @@ int main(void) {
 
   precoFinal = (1 + ICMS + COFINS + PIS_PASEP) * precoInicial;
   
-  printf("\nO preco final é %.2f", precoFinal);
+  printf("O preco final é %.2f\n", precoFinal);
   
   return 0;
 }
+
+//gcc ex_4.c -o resu -Wno-unused-result && ./resu

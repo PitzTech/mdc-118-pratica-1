@@ -13,7 +13,9 @@ int main(void) {
 
   perimetroPizza = raioPizza * 2 * PI;
   
-  printf("\nO valor do perimetro da pizza é %.2f", perimetroPizza);
+  printf("O perimetro da pizza é %.2f\n", perimetroPizza);
   
   return 0;
 }
+
+//gcc ex_3.c -o resu -Wno-unused-result && ./resu
