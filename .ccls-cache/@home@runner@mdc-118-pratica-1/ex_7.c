@@ -14,7 +14,10 @@ int main(void) {
   scanf("%f", &distancia);
 
   printf("Digite a angulação média do aviao em graus (<= 45) ");
-  scanf("%f", &angulo);
+  while(!scanf("%f", &angulo) || angulo > 45 || angulo < 0) {
+    printf("O angulo deve ser menor que 45 e positivo\n");
+    printf("Digite novamente: ");
+  }  
 
   altura = sinf(degreeToRadian(angulo)) * distancia;
   

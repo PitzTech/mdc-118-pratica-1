@@ -14,12 +14,11 @@ int main(void) {
   printf("E quantos dias ");
   scanf("%d", &dias);
 
-  dias += anos * 365;
-  dias += meses * 30;
+  dias += anos * 365 + meses * 30;
 
   printf("A sua idade em dias é %d dias", dias);
   
   return 0;
 }
 
-// clang ex_9.c -o resul -lm
+//gcc ex_9.c -o resu -Wno-unused-result && ./resu

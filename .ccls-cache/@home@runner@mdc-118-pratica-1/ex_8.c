@@ -12,11 +12,11 @@ int main(void) {
   printf("Digite o valor da hora em segundos ");
   scanf("%d", &tempoTotal);
 
-  horas = tempoTotal / (MINUTOS * HORAS);
-  tempoTotal -= horas * MINUTOS * SEGUNDOS;
+  horas = tempoTotal / 3600;
+  tempoTotal %= 3600;
 
-  minutos = tempoTotal / (MINUTOS);
-  tempoTotal -= minutos * SEGUNDOS;
+  minutos = tempoTotal / 60;
+  tempoTotal %= 60;
 
   segundos = tempoTotal;
 
@@ -25,4 +25,4 @@ int main(void) {
   return 0;
 }
 
-// clang ex_8.c -o resul -lm
+//gcc ex_8.c -o resu -lm -Wno-unused-result && ./resu
