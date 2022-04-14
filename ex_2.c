@@ -14,7 +14,7 @@ int main(void) {
 
   areaTringulo = (float)(altura * base) / 2;
   
-  printf("A área do triangulo é %.2f\n", areaTringulo);
+  printf("A área do triangulo é aprox %.2f\n", areaTringulo);
   
   return 0;
 }

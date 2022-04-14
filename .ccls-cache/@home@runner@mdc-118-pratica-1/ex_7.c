@@ -21,7 +21,7 @@ int main(void) {
 
   altura = sinf(degreeToRadian(angulo)) * distancia;
   
-  printf("A altura atual do aviao e de %.2fkm\n", altura);
+  printf("A altura atual do aviao e de aprox %.2fkm\n", altura);
   
   return 0;
 }

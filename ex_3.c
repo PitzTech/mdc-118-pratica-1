@@ -13,7 +13,7 @@ int main(void) {
 
   perimetroPizza = raioPizza * 2 * PI;
   
-  printf("O perimetro da pizza é %.2f\n", perimetroPizza);
+  printf("O perimetro da pizza é aprox %.2f\n", perimetroPizza);
   
   return 0;
 }
