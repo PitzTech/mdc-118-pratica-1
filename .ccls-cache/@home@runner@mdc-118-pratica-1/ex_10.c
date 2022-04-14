@@ -12,7 +12,7 @@ int main(void) {
   for(int index = 6; index >= 0; index--) {
     if(!numberToDecompose[index]) continue;
     
-    printf("%c %s ", numberToDecompose[index], unitNames[index]);
+    printf("%c %s \n", numberToDecompose[index], unitNames[index]);
   }
   
   return 0;
