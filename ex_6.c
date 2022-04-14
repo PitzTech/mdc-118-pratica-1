@@ -4,7 +4,7 @@
 
 // Faça um programa em C que calcule as raízes de uma equação do 2° grau através da fórmula de Bhaskara (-b +/- raiz_quadrada(b² - 4ac)/2a).
 
-int eqCoeficientes[3];
+int a, b, c;
 
 float complex * bhaskara(int a, int b, int c) {
   static float complex raizes[2], delta;
@@ -23,15 +23,13 @@ void printComplexNumber(float complex number) {
 }
 
 int main(void) {
-  printf("Digite o A, B e C de sua equacao separados por espacos:\n");
-
-  for(int counter = 0; counter < 3; counter++){
-    scanf("%d", &eqCoeficientes[counter]);
-  }
-
-  float complex * raizes = bhaskara(eqCoeficientes[0],eqCoeficientes[1],eqCoeficientes[2]);
+  printf("Digite o A, B e C de sua equacao separados por espacos:\n");  
   
-  printf("As raizes dessa equacao sao:\n");
+  scanf("%d %d %d", &a, &b, &c);
+ 
+  float complex * raizes = bhaskara(a, b, c);
+  
+  printf("As raizes dessa equacao são:\n");
   printComplexNumber(raizes[0]);
   printComplexNumber(raizes[1]);
 

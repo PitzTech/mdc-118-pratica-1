@@ -25,4 +25,4 @@ int main(void) {
   return 0;
 }
 
-//gcc ex_8.c -o resu -lm -Wno-unused-result && ./resu
+//gcc ex_8.c -o resu -Wno-unused-result && ./resu
